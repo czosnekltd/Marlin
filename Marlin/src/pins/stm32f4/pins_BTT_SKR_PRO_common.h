@@ -87,7 +87,7 @@
     #define Z_MIN_PIN                       PG5   // E2
   #endif
 #else
-  #define Z_MIN_PIN                         PG8   // Z-
+  #define Z_MIN_PIN                         PA2    //ACK PG8   // Z-			
   #define Z_MAX_PIN                         PG5   // E2
 #endif
 
@@ -155,6 +155,23 @@
 #ifndef E2_CS_PIN
   #define E2_CS_PIN                         PG12
 #endif
+
+////////////TRIPLE Z-AXIS DOPISANA SEKCJA /////////////////////////////
+#define Z2_STEP_PIN        PD15
+#define Z2_DIR_PIN         PE7
+#define Z2_ENABLE_PIN      PA3
+#ifndef Z2_CS_PIN
+  #define Z2_CS_PIN        PG15
+#endif
+
+#define Z3_STEP_PIN        PD13
+#define Z3_DIR_PIN         PG9
+#define Z3_ENABLE_PIN      PF0
+#ifndef Z3_CS_PIN
+  #define Z3_CS_PIN        PG12
+#endif
+//////////////////////////////////////////////////////////////////////
+
 
 //
 // Software SPI pins for TMC2130 stepper drivers
