@@ -774,7 +774,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 1500, 1500, 100, 1000 }                //ACK   Zmieniłem z 3000 na 1500 bo mmimo zwiększenia prądu silników
+#define DEFAULT_MAX_ACCELERATION      { 3000, 3000, 100, 3000 }                //ACK   Zmieniłem z 3000 na 1500 bo mmimo zwiększenia prądu silników
                                                                                 //nadal występowało gubienie kroków i z10000 na 3000
                                                                                     //Testowo zmienilem dla E1 z 3000 na 1000
 
@@ -791,9 +791,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          1500    // X, Y, Z and E acceleration for printing moves    //ACK mieniłem z 3000 na 1500 bo mmimo zwiększenia prądu silników
-#define DEFAULT_RETRACT_ACCELERATION  1000    // E acceleration for retracts              //ACK 3000
-#define DEFAULT_TRAVEL_ACCELERATION   1500    // X, Y, Z acceleration for travel (non printing) moves  //ACK mieniłem z 3000 na 1500 bo mmimo zwiększeni
+#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration for printing moves    //ACK mieniłem z 3000 na 1500 bo mmimo zwiększenia prądu silników
+#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts              //ACK 3000
+#define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration for travel (non printing) moves  //ACK mieniłem z 3000 na 1500 bo mmimo zwiększeni
 
 /**
  * Default Jerk limits (mm/s)
@@ -1002,10 +1002,10 @@
 #define XY_PROBE_SPEED 8000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_SPEED_FAST (HOMING_FEEDRATE_Z / 6 )//ACK #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
+#define Z_PROBE_SPEED_FAST (HOMING_FEEDRATE_Z / 1 )//ACK #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
 
 // Feedrate (mm/m) for the "accurate" probe of each point
-#define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 4) //ACK #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2)
+#define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2) //ACK #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 2)
 
 /**
  * Multiple Probing
