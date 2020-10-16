@@ -134,7 +134,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-#define MOTHERBOARD BOARD_BTT_SKR_PRO_V1_1//ACK
+#define MOTHERBOARD BOARD_RUMBA32_MKS //BOARD_BTT_SKR_PRO_V1_1//ACK
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
