@@ -90,3 +90,4 @@
   #define E2_SERIAL_TX_PIN                  PD12
   #define E2_SERIAL_RX_PIN                  PD1
 #endif
+#define SERVO0_PIN                        PA15//ACK

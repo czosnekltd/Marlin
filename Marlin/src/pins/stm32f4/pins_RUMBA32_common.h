@@ -92,6 +92,26 @@
 #define E2_ENABLE_PIN                       PD0
 #define E2_CS_PIN                           PD1
 
+
+
+////////////TRIPLE Z-AXIS DOPISANA SEKCJA /////////////////////////////
+#define Z2_STEP_PIN                         PD6
+#define Z2_DIR_PIN                          PD7
+#define Z2_ENABLE_PIN                       PD4
+#define Z2_CS_PIN                           PD5
+
+#define Z3_STEP_PIN                         PD2
+#define Z3_DIR_PIN                          PD3
+#define Z3_ENABLE_PIN                       PD0
+#define Z3_CS_PIN                           PD1
+//////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
 #if ENABLED(TMC_USE_SW_SPI)
   #ifndef TMC_SW_MOSI
     #define TMC_SW_MOSI                     PA7
