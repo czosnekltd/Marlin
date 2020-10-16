@@ -90,4 +90,6 @@
   #define E2_SERIAL_TX_PIN                  PD12
   #define E2_SERIAL_RX_PIN                  PD1
 #endif
-#define SERVO0_PIN                        PA15//ACK
+#define SERVO0_PIN                        PB9//PA15//ACK  BLTOUCH albo PD15 jak https://github.com/makerbase-mks/MKS-RUMBA32/issues/1?fbclid=IwAR0FZ8Gmql_eELGpUHpdptaY61dG_PEFraYAeUlzD37FKt4n2T_zSAGR11U
+                                              //https://github.com/makerbase-mks/MKS-RUMBA32/issues/1?fbclid=IwAR0FZ8Gmql_eELGpUHpdptaY61dG_PEFraYAeUlzD37FKt4n2T_zSAGR11U
+                                                  //https://github.com/MarlinFirmware/Marlin/pull/18249
